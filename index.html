@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY API Test</title>
+  </head>
+  <body>
+    <h1>
+      Inspect this document, and check the console tab to see if your data is
+      there
+    </h1>
+    <script>
+      const url =
+        "https://iskarr.github.io/austindonovan.github.io/api/business.json";
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((jsObject) => {
+          console.log(jsObject);
+        });
+    </script>
+  </body>
+</html>
